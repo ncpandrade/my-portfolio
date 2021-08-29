@@ -4,19 +4,24 @@ body {
 }
 header {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 35px;
     /* background-image: url(../assets/images/avatar.jpg); */
 }
-header h1 {
-    color: rgb(7, 39, 126);
-    padding: 60px;
+header div {
     text-align: center;
 }
-header nav {
-    padding: 8% 0 0 0;
+header h1 {
+    color: rgb(7, 39, 126);
+    padding: 10px;
+    text-align: center;
+    font-size: 55px;
 }
+/* header nav {
+    padding: 8% 0 0 0;
+} */
 header nav ul {
         display: flex;
         flex-wrap: wrap;
@@ -29,8 +34,8 @@ header a {
         color: rgb(7, 39, 126);
 }
 header nav ul li a {
-    /* padding: 60px 15px; */
-    margin: 0 30px;
+    padding: 10px 15px;
+    /* margin: 0 30px; */
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -50,6 +55,7 @@ header nav ul li a:hover {
 }
 .about-myself h2 {
     text-align: center;
+    font-size: 48px;
 }
 .about-myself p {
     text-align: center;
@@ -62,10 +68,12 @@ header nav ul li a:hover {
 }
 .projects h2 {
     text-align: center;
+    font-size: 48px;
 }
-.contact h1 {
+.contact h2 {
     text-align: center;
     color: rgb(7, 39, 126);
+    font-size: 48px;
 }
 
 .contact address ul{
@@ -108,4 +116,21 @@ header nav ul li a:hover {
       header nav ul li a {
         font-size: 20px;
       }
-    }}
+    }
+    @media screen and (max-width: 768px) {
+        section {
+            padding: 30px 15px;
+        }
+        .projects-links {
+            flex: 1 50%;
+            margin: auto;
+        }
+        .projects h3 {
+            flex: 1 50%;
+            justify-content: space-around;
+        }
+    }
+}
+   
+        
+    
