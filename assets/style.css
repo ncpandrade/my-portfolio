@@ -99,8 +99,12 @@ header nav ul li a:hover {
     text-decoration: none;
 
 /*adjustments for screen sizes*/
+}
 @media screen and (max-width: 575px){
-    
+
+    .project-links h3 {
+        text-align: center;
+    }
 } 
         
     
