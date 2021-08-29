@@ -1,4 +1,7 @@
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -9,6 +12,7 @@ header {
 header h1 {
     color: rgb(7, 39, 126);
     padding: 60px;
+    text-align: center;
 }
 header nav {
     padding: 8% 0 0 0;
@@ -44,29 +48,45 @@ header nav ul li a:hover {
     /* background-image: url(../assets/images/avatar.jpg); */
     color: rgb(2, 40, 90,);
 }
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.about-myself h2 {
+    text-align: center;
 }
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-decoration: none;
-    /* background-color: rgb(139, 175, 196); */
+.about-myself p {
+    text-align: center;
+    font-weight: bolder;
 }
+.project-links {
+    display: flex;
+    justify-content: space-around;
+
+}
+.projects h2 {
+    text-align: center;
+}
+.contact h1 {
+    text-align: center;
+    color: rgb(7, 39, 126);
+}
+
 .contact address ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
     list-style: none;
+    color: rgb(7, 39, 126);
+    
 }
 .contact address ul li {
     padding: 10px 15px;
     color: rgb(7, 39, 126);
+    text-decoration: none;
 }
+.contact address ul li a{
+    padding: 10px 15px;
+    color: rgb(7, 39, 126);
+    text-decoration: none;
+
 /*adjustments for screen sizes*/
 @media screen and (max-width: 980px){
     header {
@@ -88,4 +108,4 @@ header nav ul li a:hover {
       header nav ul li a {
         font-size: 20px;
       }
-}
+    }}
