@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <h1>Nadine Paez Andrade</h1>
-    <img src=""/>
+    <header>
+        <img src="./assets/images/avatar.jpg" class="avatar"
+         width="200"
+         height="200"/>
+         <h1>Nadine Paez Andrade</h1>
     <nav>
         <ul>
-            <li><a href="#About Me">About Me</a></li>
-            <li><a href="#My Projects">My Projects</a></li>
-            <li><a href="#Contact Me">Contact Me</a></li>
+            <li><a href="#About-Me">About Me</a></li>
+            <li><a href="#My-Projects">My Projects</a></li>
+            <li><a href="#Contact-Me">Contact Me</a></li>
         </ul>
-    </nav>  
-    <section id="About Me">
+    </nav> 
+    </header>
+    <div class="hero">
+    <section id="About-Me" class="about-myself">
         <h2>About Me</h2>
         <p>I am Nadine, a Full Stack Web Developer in training. This is my first portfolio website built from scratch.</p>
     </section>
-    <section id="My Projects">
+    <section id="My-Projects" class="projects">
         <h1>My Projects</h1>
         <article>
             <div>
@@ -49,13 +54,16 @@
             height="200"/>
         </article>
     </section>
-    <section id="Contact Me">
+    </div>
+    <section id="Contact-Me" class="contact">
         <h1>Contact Me</h1>
         <address>
-            P: 555.555.5555<br />
-            E: <a href="mailto:info@nadine">info@nadine.io</a><br />
-            <a href="">GitHub</a><br />
-            <a href="">linkedin</a>
+            <ul>
+                <li>P: 555.555.5555</li>
+                <li>E: <a href="mailto:info@nadine">info@nadine.io</a></li>
+                <li><a href="">GitHub</a></li>
+                <li><a href="">linkedin</a></li>
+            </ul>
         </address>
     </section>
 <footer></footer>

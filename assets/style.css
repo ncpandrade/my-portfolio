@@ -1,0 +1,91 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 35px;
+    /* background-image: url(../assets/images/avatar.jpg); */
+}
+header h1 {
+    color: rgb(7, 39, 126);
+    padding: 60px;
+}
+header nav {
+    padding: 8% 0 0 0;
+}
+header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        align-items: center;
+        list-style: none;
+}
+header a {
+        text-decoration: none;
+        color: rgb(7, 39, 126);
+}
+header nav ul li a {
+    /* padding: 60px 15px; */
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+header nav ul li a:hover {
+    background-color:rgba(7, 39, 126, 0.2) ;
+}
+.avatar {
+    border-radius: 50%;
+}
+.hero {
+    background-color: rgba(7, 39, 126, 0.2);
+    background-size: cover;
+}
+.about-myself {
+    /* background-image: url(../assets/images/avatar.jpg); */
+    color: rgb(2, 40, 90,);
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;
+    /* background-color: rgb(139, 175, 196); */
+}
+.contact address ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    list-style: none;
+}
+.contact address ul li {
+    padding: 10px 15px;
+    color: rgb(7, 39, 126);
+}
+/*adjustments for screen sizes*/
+@media screen and (max-width: 980px){
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }  
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+}
